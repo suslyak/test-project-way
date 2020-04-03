@@ -1,0 +1,36 @@
+@mixin clear-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin clear-gaps {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin mouse-effects-opacity($hover-opacity,$press-opacity) {
+  &:hover {
+    opacity: $hover-opacity;
+  }
+
+  &:active {
+    opacity: $press-opacity;
+  }
+}
+
+//layout-mixins
+@mixin wrapper() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin gutters($gutter) {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+@mixin make-row {
+  display: flex;
+  flex-wrap: wrap;
+}

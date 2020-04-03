@@ -1,0 +1,62 @@
+.button {
+  display: block;
+  padding: 10px 12px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  background-color: $green;
+  cursor: pointer;
+
+  &--smaller {
+    position: relative;
+    padding: 14px 12px 12px 12px;
+    font-size: 14px;
+    line-height: 1.2;
+    align-self: auto;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      z-index: 1;
+      margin-left: 15.5%;
+      align-self: flex-start;
+      margin-top: 47px;
+      font-size: 20px;
+      line-height: 1;
+      order: 1;
+      padding: 17px 26px 15px 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 53px;
+      margin-left: 120px;
+    }
+  }
+
+  &:hover {
+    background-color: $green--darken;
+  }
+
+  &:active {
+    background-color: $green--darken;
+    color: $whiteOp;
+  }
+
+  &--gray {
+    background-color: $concrete;
+    color: $tundora;
+
+    &:hover {
+      background-color: $concrete--darken;
+    }
+
+    &:active {
+      background-color: $concrete--darken;
+      color: $tundoraOp;
+    }
+  }
+}

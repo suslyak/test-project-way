@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-Medium.woff2"),
+    url("../fonts/Montserrat-Medium.woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-Regular.woff2"),
+    url("../fonts/Montserrat-Regular.woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url("../fonts/Montserrat-Bold.woff2"),
+    url("../fonts/Montserrat-Bold.woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  text-align: left;
+  color: $tundora;
+
+  @media (min-width: $tablet-width) {
+  }
+}
