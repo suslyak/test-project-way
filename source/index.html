@@ -61,7 +61,7 @@
           <p>
             На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
           </p>
-          <button class="button">купить тур сейчас</button>
+          <a href="#by-tour" class="button">купить тур сейчас</a>
         </div>
         <img class="tour__picture" src="img/" alt="тур в Грецию">
         <div class="comment">
@@ -85,7 +85,7 @@
             <li>Завтраки, ужины в отелях и ланчи на природе</li>
             <li>Экскурсии по удивительно красивым местам Европы</li>
           </ul>
-          <button class="button">купить тур сейчас</button>
+          <a href="#by-tour" class="button">купить тур сейчас</a>
         </li>
         <li class="tour-cards-list__item">
           <h3>Экономный $1399</h3>
@@ -99,7 +99,7 @@
             <li>Только завтраки в отелях</li>
             <li>Экскурсии по удивительно красивым местам Европы</li>
           </ul>
-          <button class="button">купить тур сейчас</button>
+          <a href="#by-tour" class="button">купить тур сейчас</a>
         </li>
       </ul>
       <div class="tours-taps__price">
@@ -121,15 +121,57 @@
         <p>
           Оставьте свой номер или e-mail и мы свяжемся с Вами
         </p>
-          <label for="phone"></label>
-          <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
-          <label for="email"></label>
-          <input id="email" type="text" name="email" placeholder="E-mail">
-          <button type="submit" class="button">отправить</button>
+        <label for="phone"></label>
+        <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
+        <label for="email"></label>
+        <input id="email" type="text" name="email" placeholder="E-mail">
+        <button type="submit" class="button">отправить</button>
       </form>
     </section>
+    <div id="by-tour" class="by-tour-popup">
+      <h2 class="visually-hidden">Форма для покупки тура</h2>
+      <img src="" alt="" class="by-tour-popup__picture">
+      <form class="by-tour-popup__form" action="#" method="post">
+        <h3>Купить тур</h3>
+        <label for="phone"></label>
+        <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
+        <label for="email"></label>
+        <input id="email" type="text" name="email" placeholder="E-mail">
+        <button type="submit" class="button">отправить</button>
+      </form>
+    </div>
   </main>
-  <footer>
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Дополнительная информация</h2>
+    <div class="coming-next-tours">
+      <h3>Следующие путешествия</h3>
+      <ul class="coming-next-tours">
+        <li><a href="#">Марсель</a></li>
+        <li><a href="#">Сардиния</a></li>
+        <li><a href="#">Корс</a></li>
+        <li><a href="#">Ним</a></li>
+        <li><a href="#">Палермо</a></li>
+        <li><a href="#">Ницца</a></li>
+        <li><a href="#">Монпелье</a></li>
+        <li><a href="#">Катания</a></li>
+        <li><a href="#">Монако</a></li>
+        <li><a href="#">Барселона</a></li>
+        <li><a href="#">Неаполь</a></li>
+        <li><a href="#">Динь-ле-Бен</a></li>
+        <li><a href="#">Пальма</a></li>
+        <li><a href="#">Рим</a></li>
+        <li><a href="#">Гренобль</a></li>
+      </ul>
+    </div>
+    <div class="page-footer__contacts">
+      <h3>Наши контакты</h3>
+      <a class="page-footer__email" href="#">puteshestviemechta@gmail.ru</a>
+      <a class="page-footer__phone" href="#">+7 (499) -784-684-46</a>
+    </div>
+    <div class="page-footer__corporatives">
+      <h3>Корпоративные путешествия</h3>
+      Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+    </div>
   </footer>
   <script src="js/scrpts.min.js"></script>
 </body>
