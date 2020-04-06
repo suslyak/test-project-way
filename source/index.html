@@ -17,10 +17,117 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header>
+  <header class="page-header">
+    <a class="logo"href="#">
+      <svg src="img/logo.svg" alt="Way лого">
+    </a>
+    <nav class="main-menu">
+      <li class="main-menu__item"><a href="">О путешествии</a></li>
+      <li class="main-menu__item"><a href="#">Цены</a></li>
+    </nav>
+    <svg width="30" height="30">
+      <use xlink:href="#icon-phone"></use>
+    </svg>
+    <span class="page-header__phone">
+      <a href="">+7 (499) 784-684-46</a>
+    </span>
   </header>
   <main>
-    Way
+    <section class="promo">
+      <h2>Путешествие по Европе</h2>
+      <p>
+        В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
+      </p>
+      <button class="button button--wider">смотреть тур</button>
+    </section>
+    <section class="tours">
+      <h2>Места посещения</h2>
+      <p>Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+    </section>
+    <section class="tours-taps">
+      <h2 class="visually-hidden">
+        Информация о турах
+      </h2>
+      <ul class="tours-taps__tours-list">
+        <li><a href="#greece">Греция</a></li>
+        <li><a href="#albania">Албания</a></li>
+        <li><a href="#makedonia">Македония</a></li>
+        <li><a href="#crnagora">Черногория</a></li>
+        <li><a href="#croatia">Хорватия</a></li>
+      </ul>
+      <div class="tour">
+        <h3>Греция</h3>
+        <div class="tour__description">
+          <p>
+            На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+          </p>
+          <button class="button">купить тур сейчас</button>
+        </div>
+        <img class="tour__picture" src="img/" alt="тур в Грецию">
+        <div class="comment">
+          <h3>Отзывы</h3>
+          <p>
+            Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
+          </p>
+            <img class="comment__avatar" src="img/" alt="" >
+            <span class="comment__author">Влада Голицина</span>
+        </div>
+      </div>
+      <ul class="tour-cards-list">
+        <li class="tour-cards-list__item price-card--redborder">
+          <h3>Комплексный $1999</h3>
+          <p>
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="tour-cards-list__features">
+            <li>Разработанный маршрут с гидом группы</li>
+            <li>Перелет, трансфер и проживание в отелях</li>
+            <li>Завтраки, ужины в отелях и ланчи на природе</li>
+            <li>Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+          <button class="button">купить тур сейчас</button>
+        </li>
+        <li class="tour-cards-list__item">
+          <h3>Экономный $1399</h3>
+          <p>
+            Ознакомьтесь с перечнем того, что входит в данный пакет
+          </p>
+          <ul class="tour-cards-list__features">
+            <li>Разработанный маршрут с гидом группы</li>
+            <li>Перелет и трансфер</li>
+            <li>Проживание в хостелах при отелях</li>
+            <li>Только завтраки в отелях</li>
+            <li>Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+          <button class="button">купить тур сейчас</button>
+        </li>
+      </ul>
+      <div class="tours-taps__price">
+        <h3>Цены</h3>
+        <p>
+          Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+        </p>
+        <span class="tours-taps__contuct-us">Свяжитесь с нами</span>
+        <svg width="30" height="30">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span class="tours-taps__phone">+7 (499) -784-684-46</span>
+      </div>
+    </section>
+    <section class="ask-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="ask-us__form" action="#" method="post">
+        <h3>У Вас остались вопросы?</h3>
+        <p>
+          Оставьте свой номер или e-mail и мы свяжемся с Вами
+        </p>
+          <label for="phone"></label>
+          <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
+          <label for="email"></label>
+          <input id="email" type="text" name="email" placeholder="E-mail">
+          <button type="submit" class="button">отправить</button>
+      </form>
+    </section>
   </main>
   <footer>
   </footer>
