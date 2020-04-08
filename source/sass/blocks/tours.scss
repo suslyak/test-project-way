@@ -1,0 +1,46 @@
+.tours {
+  h2 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: -1.245px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+
+    &::before {
+      content: "";
+      width: 228px;
+      display: block;
+      border-top: 4px solid $coral;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.tours__cards {
+
+}
+
+.tours__card {
+  color: $black;
+  text-decoration: none;
+
+  &:visited {
+    color: $black;
+  }
+}
+
+.tours__title {
+  width: 215px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 16px 0 17px 0;
+  background-color: $white;
+}

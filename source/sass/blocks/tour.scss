@@ -1,0 +1,24 @@
+.tour {
+  h3 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    letter-spacing: -1px;
+  }
+
+  button {
+    width: 250px;
+  }
+}
+
+.tour__description {
+  p {
+    &::before {
+      content: "";
+      width: 175px;
+      display: block;
+      border-top: 3px solid $coral;
+      margin-bottom: 30px;
+    }
+  }
+}

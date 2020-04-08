@@ -1,0 +1,29 @@
+.comment {
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    &::before {
+      content: "";
+      width: 68px;
+      display: block;
+      border-top: 1px solid $coral;
+      margin-bottom: 20px;
+    }
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.comment__author {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+

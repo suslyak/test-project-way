@@ -1,3 +1,22 @@
 .main-menu {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: $black--dark;
+}
 
+.main-menu__item {
+  a {
+    text-decoration: none;
+    color: $black--dark;
+
+    &:visited {
+      color: $black--dark;
+    }
+
+    &:hover {
+      color: $coral;
+    }
+  }
 }

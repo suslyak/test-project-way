@@ -1,62 +1,33 @@
 .button {
+  width: 250px;
   display: block;
-  padding: 10px 12px;
+  padding: 30px 40px;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
   text-align: center;
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
-  background-color: $green;
+  background-color: $coral;
   cursor: pointer;
 
-  &--smaller {
-    position: relative;
-    padding: 14px 12px 12px 12px;
-    font-size: 14px;
-    line-height: 1.2;
-    align-self: auto;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      z-index: 1;
-      margin-left: 15.5%;
-      align-self: flex-start;
-      margin-top: 47px;
-      font-size: 20px;
-      line-height: 1;
-      order: 1;
-      padding: 17px 26px 15px 26px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 53px;
-      margin-left: 120px;
-    }
-  }
-
   &:hover {
-    background-color: $green--darken;
+    background-color: $orange;
   }
 
   &:active {
-    background-color: $green--darken;
-    color: $whiteOp;
+    background-color: $orange;
   }
 
-  &--gray {
-    background-color: $concrete;
-    color: $tundora;
+  &--with-icon {
+    text-align: left;
+  }
 
-    &:hover {
-      background-color: $concrete--darken;
-    }
-
-    &:active {
-      background-color: $concrete--darken;
-      color: $tundoraOp;
-    }
+  &--wider {
+    width: 340px;
   }
 }
