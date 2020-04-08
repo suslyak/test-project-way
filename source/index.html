@@ -21,16 +21,16 @@
     <a class="logo"href="#">
       <svg src="img/logo.svg" alt="Way лого">
     </a>
-    <nav class="main-menu">
-      <li class="main-menu__item"><a href="">О путешествии</a></li>
-      <li class="main-menu__item"><a href="#">Цены</a></li>
+    <nav>
+      <ul class="main-menu">
+        <li class="main-menu__item"><a href="">О путешествии</a></li>
+        <li class="main-menu__item"><a href="#">Цены</a></li>
+      </ul>
     </nav>
     <svg width="30" height="30">
       <use xlink:href="#icon-phone"></use>
     </svg>
-    <span class="page-header__phone">
-      <a href="">+7 (499) 784-684-46</a>
-    </span>
+    <a class="page-header__phone" href="">+7 (499) 784-684-46</a>
   </header>
   <main>
     <section class="promo">
@@ -38,24 +38,31 @@
       <p>
         В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
       </p>
-      <button class="button button--wider">смотреть тур</button>
+      <button class="button button--wider button--with-icon">смотреть тур</button>
     </section>
     <section class="tours">
-      <h2>Места посещения</h2>
+      <h2>Места<br>посещения</h2>
       <p>Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      <ul class="tours__cards">
+        <li><a class="tours__card tours__card--greece" href="#greece"><div class="tours__title">Греция</div></a></li>
+        <li><a class="tours__card tours__card--albania" href="#albania"><div class="tours__title">Албания</div></a></li>
+        <li><a class="tours__card tours__card--makedonia" href="#makedonia"><div class="tours__title">Македония</div></a></li>
+        <li><a class="tours__card tours__card--crnagora" href="#crnagora"><div class="tours__title">Черногория</div></a></li>
+        <li><a class="tours__card tours__card--croatia" href="#croatia"><div class="tours__title">Хорватия</div></a></li>
+      </ul>
     </section>
     <section class="tours-taps">
       <h2 class="visually-hidden">
         Информация о турах
       </h2>
       <ul class="tours-taps__tours-list">
-        <li><a href="#greece">Греция</a></li>
+        <li><a class="selected" href="#greece">Греция</a></li>
         <li><a href="#albania">Албания</a></li>
         <li><a href="#makedonia">Македония</a></li>
         <li><a href="#crnagora">Черногория</a></li>
         <li><a href="#croatia">Хорватия</a></li>
       </ul>
-      <div class="tour">
+      <div id="greece" class="tour">
         <h3>Греция</h3>
         <div class="tour__description">
           <p>
@@ -73,45 +80,119 @@
             <span class="comment__author">Влада Голицина</span>
         </div>
       </div>
-      <ul class="tour-cards-list">
-        <li class="tour-cards-list__item price-card--redborder">
-          <h3>Комплексный $1999</h3>
+      <div id="albania" class="tour">
+        <h3>Албания</h3>
+        <div class="tour__description">
           <p>
-            Ознакомьтесь с перечнем того, что входит в данный пакет
+            В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
           </p>
-          <ul class="tour-cards-list__features">
-            <li>Разработанный маршрут с гидом группы</li>
-            <li>Перелет, трансфер и проживание в отелях</li>
-            <li>Завтраки, ужины в отелях и ланчи на природе</li>
-            <li>Экскурсии по удивительно красивым местам Европы</li>
-          </ul>
           <a href="#by-tour" class="button">купить тур сейчас</a>
-        </li>
-        <li class="tour-cards-list__item">
-          <h3>Экономный $1399</h3>
+        </div>
+        <img class="tour__picture" src="img/" alt="тур в Грецию">
+        <div class="comment">
+          <h3>Отзывы</h3>
           <p>
-            Ознакомьтесь с перечнем того, что входит в данный пакет
+            Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
           </p>
-          <ul class="tour-cards-list__features">
-            <li>Разработанный маршрут с гидом группы</li>
-            <li>Перелет и трансфер</li>
-            <li>Проживание в хостелах при отелях</li>
-            <li>Только завтраки в отелях</li>
-            <li>Экскурсии по удивительно красивым местам Европы</li>
-          </ul>
+            <img class="comment__avatar" src="img/" alt="" >
+            <span class="comment__author">Маришка</span>
+        </div>
+      </div>
+      <div id="makedonia" class="tour">
+        <h3>Македония</h3>
+        <div class="tour__description">
+          <p>
+            В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
+          </p>
           <a href="#by-tour" class="button">купить тур сейчас</a>
-        </li>
-      </ul>
+        </div>
+        <img class="tour__picture" src="img/" alt="тур в Грецию">
+        <div class="comment">
+          <h3>Отзывы</h3>
+          <p>
+            Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.
+          </p>
+            <img class="comment__avatar" src="img/" alt="" >
+            <span class="comment__author">Михаил Кузьмин</span>
+        </div>
+      </div>
+      <div id="crnagora" class="tour">
+        <h3>Черногория</h3>
+        <div class="tour__description">
+          <p>
+            Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
+          </p>
+          <a href="#by-tour" class="button">купить тур сейчас</a>
+        </div>
+        <img class="tour__picture" src="img/" alt="тур в Грецию">
+        <div class="comment">
+          <h3>Отзывы</h3>
+          <p>
+            Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
+          </p>
+            <img class="comment__avatar" src="img/" alt="" >
+            <span class="comment__author">Анастасия Мей</span>
+        </div>
+      </div>
+      <div id="croatia" class="tour">
+        <h3>Хорватия</h3>
+        <div class="tour__description">
+          <p>
+            В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
+          </p>
+          <a href="#by-tour" class="button">купить тур сейчас</a>
+        </div>
+        <img class="tour__picture" src="img/" alt="тур в Грецию">
+        <div class="comment">
+          <h3>Отзывы</h3>
+          <p>
+            Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
+          </p>
+            <img class="comment__avatar" src="img/" alt="" >
+            <span class="comment__author">Владимир Мулицин</span>
+        </div>
+      </div>
       <div class="tours-taps__price">
-        <h3>Цены</h3>
-        <p>
-          Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
-        </p>
-        <span class="tours-taps__contuct-us">Свяжитесь с нами</span>
-        <svg width="30" height="30">
-          <use xlink:href="#icon-phone"></use>
-        </svg>
-        <span class="tours-taps__phone">+7 (499) -784-684-46</span>
+        <ul class="tour-price-cards">
+          <li class="tour-price-cards__item tour-price-cards__item--redborder">
+            <h3>Комплексный $1999</h3>
+            <p>
+              Ознакомьтесь с перечнем того, что входит в данный пакет
+            </p>
+            <ul class="tour-price-cards__features">
+              <li>Разработанный маршрут с гидом группы</li>
+              <li>Перелет, трансфер и проживание в отелях</li>
+              <li>Завтраки, ужины в отелях и ланчи на природе</li>
+              <li>Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a href="#by-tour" class="button">купить тур сейчас</a>
+          </li>
+          <li class="tour-price-cards__item">
+            <h3>Экономный $1399</h3>
+            <p>
+              Ознакомьтесь с перечнем того, что входит в данный пакет
+            </p>
+            <ul class="tour-price-cards__features">
+              <li>Разработанный маршрут с гидом группы</li>
+              <li>Перелет и трансфер</li>
+              <li>Проживание в хостелах при отелях</li>
+              <li>Только завтраки в отелях</li>
+              <li>Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a href="#by-tour" class="button">купить тур сейчас</a>
+          </li>
+        </ul>
+        <div class="tours-taps__our-price">
+          <h3>Цены</h3>
+          <p>
+            Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+          </p>
+          <span class="tours-taps__contuct-us">Свяжитесь с нами</span>
+          <svg width="30" height="30">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <span class="tours-taps__phone">+7 (499) -784-684-46</span>
+        </div>
       </div>
     </section>
     <section class="ask-us">
@@ -121,21 +202,24 @@
         <p>
           Оставьте свой номер или e-mail и мы свяжемся с Вами
         </p>
-        <label for="phone"></label>
-        <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
-        <label for="email"></label>
-        <input id="email" type="text" name="email" placeholder="E-mail">
+        <label for="feedback-phone">телефон</label>
+        <input id="feedback-phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
+        <label for="feedback-email">почта</label>
+        <input id="feedback-email" type="text" name="email" placeholder="E-mail">
         <button type="submit" class="button">отправить</button>
       </form>
     </section>
     <div id="by-tour" class="by-tour-popup">
       <h2 class="visually-hidden">Форма для покупки тура</h2>
       <img src="" alt="" class="by-tour-popup__picture">
+      <svg class="by-tour-popup__close" width="22" height="22">
+        <use xlink:href="#icon-close"></use>
+      </svg>
       <form class="by-tour-popup__form" action="#" method="post">
         <h3>Купить тур</h3>
-        <label for="phone"></label>
+        <label for="phone" class="visually-hidden">телефон</label>
         <input id="phone" type="text" name="phone" placeholder="+7 Введите 10 цифр номера" required>
-        <label for="email"></label>
+        <label for="email" class="visually-hidden">почта</label>
         <input id="email" type="text" name="email" placeholder="E-mail">
         <button type="submit" class="button">отправить</button>
       </form>
@@ -165,7 +249,13 @@
     </div>
     <div class="page-footer__contacts">
       <h3>Наши контакты</h3>
+      <svg width="30" height="30">
+        <use xlink:href="#icon-mail"></use>
+      </svg>
       <a class="page-footer__email" href="#">puteshestviemechta@gmail.ru</a>
+      <svg width="30" height="30">
+        <use xlink:href="#icon-phone"></use>
+      </svg>
       <a class="page-footer__phone" href="#">+7 (499) -784-684-46</a>
     </div>
     <div class="page-footer__corporatives">

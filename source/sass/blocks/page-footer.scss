@@ -1,3 +1,21 @@
 .page-footer {
+  margin-top: auto;
+  position: relative;
+  font-size: 14px;
+  line-height: 17px;
 
+  @include wrapper;
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
+
+.page-footer__corporatives {
+  line-height: 1.7;
+}
+
+
+
