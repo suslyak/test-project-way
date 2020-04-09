@@ -1,9 +1,15 @@
 .logo {
-  background: url("../img/logo-mobile.svg") no-repeat;
-  width: 191px;
-  height: 38px;
+  background: url("../img/logo.svg") no-repeat;
+  width: 57px;
+  height: 22px;
   margin-top: 12px;
   margin-bottom: 16px;
   display: block;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    width: 44px;
+    height: 17px;
+    background-size: 44px 17px;
+  }
 }

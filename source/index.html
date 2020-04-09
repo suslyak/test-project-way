@@ -17,38 +17,64 @@
   <div style="display: none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header">
-    <a class="logo"href="#">
-      <svg src="img/logo.svg" alt="Way лого">
-    </a>
-    <nav>
-      <ul class="main-menu">
-        <li class="main-menu__item"><a href="">О путешествии</a></li>
-        <li class="main-menu__item"><a href="#">Цены</a></li>
+  <header class="page-header page-header--no-js">
+    <a class="logo" href="index.html" aria-label="Логотип Way"></a>
+    <nav class="page-header__navigation page-header__navigation--no-js">
+      <ul class="main-menu main-menu--no-js">
+        <li class="main-menu__item"><a class="main-menu__link">О путешествии</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">Цены</a></li>
       </ul>
     </nav>
-    <svg width="30" height="30">
+    <button class="page-header__sandwich" aria-label="открыть или закрыть меню"></button>
+    <svg class="page-header__icon-phone" width="30" height="30">
       <use xlink:href="#icon-phone"></use>
     </svg>
-    <a class="page-header__phone" href="">+7 (499) 784-684-46</a>
+    <a class="page-header__phone" href="">+7 (499) -784-684-46</a>
   </header>
   <main>
     <section class="promo">
-      <h2>Путешествие по Европе</h2>
-      <p>
-        В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
-      </p>
-      <button class="button button--wider button--with-icon">смотреть тур</button>
+      <div class="promo__container">
+        <h2>Путешествие по Европе</h2>
+        <p>
+          В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
+        </p>
+        <button class="button button--wider button--with-icon">
+          смотреть тур
+          <svg width="17" height="17">
+            <use xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </button>
+      </div>
     </section>
     <section class="tours">
-      <h2>Места<br>посещения</h2>
+      <h2>Места посещения</h2>
       <p>Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-      <ul class="tours__cards">
-        <li><a class="tours__card tours__card--greece" href="#greece"><div class="tours__title">Греция</div></a></li>
-        <li><a class="tours__card tours__card--albania" href="#albania"><div class="tours__title">Албания</div></a></li>
-        <li><a class="tours__card tours__card--makedonia" href="#makedonia"><div class="tours__title">Македония</div></a></li>
-        <li><a class="tours__card tours__card--crnagora" href="#crnagora"><div class="tours__title">Черногория</div></a></li>
-        <li><a class="tours__card tours__card--croatia" href="#croatia"><div class="tours__title">Хорватия</div></a></li>
+      <ul class="tours__cards-list">
+        <li>
+          <a class="tours__card tours__card--greece" href="#greece">
+            <img src="img/greece-desktop@1x.jpg" alt="Тур в Грецию">
+          </a>
+        </li>
+        <li>
+          <a class="tours__card tours__card--albania" href="#albania">
+            <img src="img/albania-desktop@1x.jpg" alt="Тур в Албанию">
+          </a>
+        </li>
+        <li>
+          <a class="tours__card tours__card--makedonia" href="#makedonia">
+            <img src="img/makedonia-desktop@1x.jpg" alt="Македонию">
+          </a>
+        </li>
+        <li>
+          <a class="tours__card tours__card--crnagora" href="#crnagora">
+            <img src="img/crnagora-desktop@1x.jpg" alt="Черногорию">
+          </a>
+        </li>
+        <li>
+          <a class="tours__card tours__card--croatia" href="#croatia">
+            <img src="img/croatia-desktop@1x.jpg" alt="Хорватию">
+          </a>
+        </li>
       </ul>
     </section>
     <section class="tours-taps">

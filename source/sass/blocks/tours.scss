@@ -1,12 +1,35 @@
 .tours {
+  width: 100%;
+  margin-top: 200px;
+  max-width: 1180px;
+  padding: 0 5px;
+
+  @include wrapper;
+
   h2 {
     font-weight: 600;
     font-size: 55px;
     line-height: 80px;
     letter-spacing: -1.245px;
+    margin-bottom: 28px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 21px;
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.1px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 24px;
+      line-height: 150%;
+    }
   }
 
   p {
+    width: 350px;
+    margin-bottom: 55px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -19,19 +42,164 @@
       border-top: 4px solid $coral;
       margin-bottom: 30px;
     }
+
+    @media (max-width: $tablet-width) {
+      width: 60%;
+      margin: 0 auto 10px auto;
+      text-align: center;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 615px;
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 108px;
   }
 }
 
-.tours__cards {
+.tours__cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
+  @include clear-ul;
+
+  li {
+    width: calc((100% - 120px) / 3);
+    margin-top: 100px;
+
+    &:nth-child(-n+3) {
+      margin-top: 0;
+    }
+    &:nth-child(4n) {
+      margin-left: 175px;
+    }
+
+    &:nth-child(5n) {
+      margin-right: 175px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: calc((100% - 30px) / 2);
+      margin-top: 30px;
+
+      &:nth-child(-n+2) {
+        margin-top: 0;
+      }
+
+      &:nth-child(-n+3) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(4n) {
+        margin-left:0;
+      }
+
+      &:nth-child(5n) {
+        margin: 30px auto;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      padding: 0 16px;
+      margin-top: 30px;
+
+
+      &:nth-child(-n+2) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(-n+3) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(4n) {
+        margin-left:0;
+      }
+
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .tours__card {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   color: $black;
   text-decoration: none;
 
+  img {
+    width: 100%;
+  }
+
   &:visited {
     color: $black;
+  }
+
+  &::after {
+    width: 215px;
+    height: 62px;
+    position: absolute;
+    bottom: -1px;
+    left: calc(50% - 107px);
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding: 16px 0 17px 0;
+    background-color: $white;
+  }
+
+  &--greece {
+    &::after {
+      content: "Греция";
+    }
+  }
+
+  &--albania {
+    &::after {
+      content: "Албания";
+    }
+  }
+
+  &--makedonia {
+    &::after {
+      content: "Македония";
+    }
+  }
+
+  &--crnagora {
+    &::after {
+      content: "Черногория";
+    }
+  }
+
+  &--croatia {
+    &::after {
+      content: "Хорватия";
+    }
   }
 }
 
