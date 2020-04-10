@@ -1,39 +1,181 @@
 .tours-taps {
+  width: 100%;
 
+  background: url("../img/europe.svg") no-repeat 49.5% 140px;
+
+  @media (max-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.tours-taps__container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 5px;
+
+  @include wrapper;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.tours-taps__tours-list-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 97px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 77px;
+    padding: 0 16px;
+  }
 }
 
 .tours-taps__tours-list {
+  display: inline-flex;
+  border-bottom: 1px solid $blackOp;
+
+  @include clear-ul;
+
+  padding-bottom: 10px;
+
   a {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: -0.415px;
+    letter-spacing: -0.4px;
     color: $blackOp;
+    text-decoration: none;
+
+    &:visited {
+      color: $blackOp;
+    }
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.tours-taps__price {
+  display: flex;
+  margin-top: 203px;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 48px;
   }
 }
 
 .tours-taps__our-price {
+  width: 25%;
+  margin-left: auto;
+  margin-top: 60px;
+
   h3 {
     font-weight: 600;
     font-size: 55px;
     line-height: 90px;
+    margin-bottom: 0;
   }
 
   p {
     font-weight: normal;
     font-size: 16px;
+    line-height: 1.7;
+
+    &::before {
+      content: "";
+      width: 175px;
+      display: block;
+      border-top: 3px solid $coral;
+      margin-bottom: 28px;
+    }
   }
 
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    order: 1;
+
+    h3 {
+      font-size: 30px;
+      line-height: 1.5;
+      margin-top: 0;
+    }
+
+    p {
+      padding: 0 20px;
+      margin-top: 20px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    h3 {
+      font-size: 24px;
+    }
+  }
 }
 
 .tours-taps__contuct-us {
+  width: 90%;
+  display: block;
+  text-align: right;
   font-weight: 500;
   font-size: 22px;
   line-height: 34px;
+  margin-top: 60px;
+  margin-bottom: 11px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 18px;
+  }
+}
+
+.tours-taps__phone-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .tours-taps__phone {
   font-size: 20px;
   line-height: 32px;
-}
+  color: $coral;
 
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

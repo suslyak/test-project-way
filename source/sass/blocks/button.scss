@@ -3,7 +3,8 @@
   height: 75px;
   display: flex;
   align-items: center;
-  padding: 10px 40px;
+  justify-content: center;
+  padding: 10px 39px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: bold;
   font-size: 12px;
@@ -43,9 +44,22 @@
     }
   }
 
+  &--buy-button {
+    width: 250px;
+
+    @media (max-width: $tablet-width) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 288px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     height: 50px;
     font-size: 10px;
+    font-weight: 500;
     line-height: 12px;
   }
 }

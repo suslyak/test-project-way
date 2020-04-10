@@ -7,6 +7,7 @@
   @include wrapper;
 
   h2 {
+    width: 350px;
     font-weight: 600;
     font-size: 55px;
     line-height: 80px;
@@ -14,6 +15,7 @@
     margin-bottom: 28px;
 
     @media (max-width: $tablet-width) {
+      width: 100%;
       margin-bottom: 21px;
       font-size: 30px;
       line-height: 1.5;
@@ -29,7 +31,7 @@
 
   p {
     width: 350px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -67,7 +69,7 @@
   @media (max-width: $mobile-width) {
     max-width: 100%;
     padding: 0;
-    margin-top: 108px;
+    margin-top: 110px;
   }
 }
 
@@ -76,41 +78,32 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+
   @include clear-ul;
+  margin-top: -44px;
 
   li {
     width: calc((100% - 120px) / 3);
     margin-top: 100px;
 
-    &:nth-child(-n+3) {
-      margin-top: 0;
-    }
-    &:nth-child(4n) {
+    &:nth-child(5n+4) {
       margin-left: 175px;
     }
 
-    &:nth-child(5n) {
+    &:nth-child(5n+5) {
       margin-right: 175px;
     }
 
     @media (max-width: $tablet-width) {
       width: calc((100% - 30px) / 2);
-      margin-top: 30px;
+      margin-top: 20px;
 
-      &:nth-child(-n+2) {
-        margin-top: 0;
+      &:nth-child(5n+4) {
+        margin-left: 0;
       }
 
-      &:nth-child(-n+3) {
-        margin-top: 30px;
-      }
-
-      &:nth-child(4n) {
-        margin-left:0;
-      }
-
-      &:nth-child(5n) {
-        margin: 30px auto;
+      &:nth-child(5n+5) {
+        margin: 30px auto 0 auto;
       }
     }
 
@@ -119,27 +112,28 @@
       padding: 0 16px;
       margin-top: 30px;
 
-
-      &:nth-child(-n+2) {
-        margin-top: 30px;
+      &:nth-child(5n+4) {
+        margin-left: 0;
+        margin-top: 69px;
       }
 
-      &:nth-child(-n+3) {
-        margin-top: 30px;
-      }
-
-      &:nth-child(4n) {
-        margin-left:0;
-      }
-
-      &:nth-child(5n) {
+      &:nth-child(5n+5) {
         margin-right: 0;
+        margin-top: 69px;
       }
 
       &:first-child {
         margin-top: 0;
       }
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
   }
 }
 
@@ -163,7 +157,7 @@
     width: 215px;
     height: 62px;
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: calc(50% - 107px);
     font-size: 24px;
     line-height: 29px;

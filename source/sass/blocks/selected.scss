@@ -1,3 +1,7 @@
-.selected {
+a.selected {
+  color: $coral;
+
+  &:visited {
     color: $coral;
+  }
 }

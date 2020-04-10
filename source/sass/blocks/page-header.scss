@@ -4,14 +4,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding:2px 20px 0 5px;
+  padding: 2px 20px 0 5px;
   height: 100px;
 
   @include wrapper;
 
   @media (max-width: $tablet-width) {
     height: 50px;
-    padding:2px 0 0 21px;
+    padding: 2px 0 0 21px;
 
     &--no-js {
       height: auto;
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding:0 0 0 16px;
+    padding: 0 0 0 16px;
   }
 }
 
@@ -40,6 +40,7 @@
 
     &--show {
       display: flex;
+      z-index: 2;
     }
 
     &--no-js {
@@ -120,6 +121,4 @@
       display: none;
     }
   }
-
-
 }

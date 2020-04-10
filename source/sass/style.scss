@@ -3,12 +3,12 @@
 @import "colors.scss";
 @import "mixins.scss";
 @import "common.scss";
-@import "blocks/modal-open";
+@import "blocks/visually-hidden.scss";
+@import "blocks/modal-open.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-menu.scss";
-@import "blocks/selected.scss";
 @import "blocks/promo.scss";
 @import "blocks/tours.scss";
 @import "blocks/tours-taps.scss";
@@ -16,3 +16,7 @@
 @import "blocks/comment.scss";
 @import "blocks/tour-price-cards.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/selected.scss";
+@import "blocks/ask-us.scss";
+@import "blocks/form-fieldset.scss";
+@import "blocks/buy-tour-popup.scss";

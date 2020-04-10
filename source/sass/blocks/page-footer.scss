@@ -1,6 +1,9 @@
 .page-footer {
   width: 100%;
   max-width: 1180px;
+  padding-left: 18px;
+  padding-bottom: 90px;
+  display: flex;
   margin-top: auto;
   position: relative;
   font-size: 14px;
@@ -12,12 +15,146 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px 50px 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px 50px 15px;
+  }
+}
+
+.page-footer__coming-next-tours {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  border-right: 1px solid $gray--darken;
+
+  h3 {
+    width: 100%;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 395px;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: space-around;
+    border-right: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray--darken;
+  }
+}
+
+.page-footer__coming-next-tours-list {
+  @include clear-ul;
+
+  margin-right: 50px;
+  line-height: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba($black, 0.5);
+
+    &:visited {
+      color: rgba($black, 0.5);
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    text-align: center;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.page-footer__contacts {
+  width: 33.33%;
+  padding-left: 92px;
+  line-height: 36px;
+  border-right: 1px solid $gray--darken;
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: $white;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    color: $coral;
+
+    &:visited {
+      color: $coral;
+    }
+
+    @media (max-width: $mobile-width) {
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 330px;
+    padding-left: 51px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: 0;
+    border-right: none;
   }
 }
 
 .page-footer__corporatives {
+  width: 33.33%;
   line-height: 1.7;
+  padding-left: 53px;
+  padding-right: 15px;
+
+  h3 {
+    margin-bottom: 20px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-top: 23px;
+    padding: 0;
+    text-align: center;
+    border-top: 1px solid $gray--darken;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 7px;
+  }
 }
-
-
-

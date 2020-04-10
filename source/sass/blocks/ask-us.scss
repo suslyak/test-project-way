@@ -1,12 +1,98 @@
 .ask-us {
+  width: 100%;
+  max-width: 1180px;
+  height: 455px;
+  margin: 140px auto 170px auto;
+  display: flex;
+  background: url("../img/feedback-background@1x.jpg") no-repeat 17px 0;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/feedback-background@2x.jpg");
+    background-size: 844px auto;
+  }
+
   h3 {
     font-weight: 600;
     font-size: 25px;
     line-height: 32px;
+    margin: 0 0 14px 0;
+    padding: 0;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0 0 18px;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 150%;
+    margin: 0;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 122px;
+    margin-bottom: 80px;
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 51px;
+    margin-bottom: 64px;
+    align-items: center;
+    background: none;
+  }
+}
+
+.ask-us__form {
+  width: 56%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 10px;
+  flex-direction: column;
+  margin: auto 0 auto auto;
+  padding: 50px;
+  background-color: $white;
+  border-radius: 5px;
+
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+
+  button {
+    width: 176px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+
+    @media (max-width: $tablet-width) {
+      width: 250px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 288px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 85%;
+    margin: auto;
+    left: 0;
+    box-shadow: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 50px 16px;
+    margin: 0;
+    background-color: $gray;
+    border-radius: 0;
   }
 }

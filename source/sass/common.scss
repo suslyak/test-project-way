@@ -44,6 +44,11 @@ html {
   box-sizing: inherit;
 }
 
+picture {
+  display: block;
+  line-height: 0;
+}
+
 body {
   min-width: 320px;
   display: flex;
@@ -55,7 +60,4 @@ body {
   font-weight: 400;
   text-align: left;
   color: $black;
-
-  @media (min-width: $tablet-width) {
-  }
 }
