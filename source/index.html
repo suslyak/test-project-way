@@ -11,7 +11,6 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
   <div style="display: none">
@@ -25,7 +24,7 @@
         <li class="main-menu__item"><a class="main-menu__link" href="#prices">Цены</a></li>
       </ul>
     </nav>
-    <button class="page-header__sandwich" aria-label="открыть или закрыть меню"></button>
+    <button class="page-header__sandwich" aria-label="открыть или закрыть меню" type="button"></button>
     <svg class="page-header__icon-phone" width="30" height="30">
       <use xlink:href="#icon-phone"></use>
     </svg>
@@ -66,7 +65,7 @@
               <source media="(max-width: 1023px)" srcset="img/albania-mobile@1x.webp 1x, img/albania-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="img/albania-desktop@1x.webp 1x, img/albania-desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 350px; 2x: 700px -->
-              <img src="img/albania-desktop@1x.jpg" srcset="img/albania-desktop@1x.jpg 1x, img/albania-desktop@2x.jpg 2x"alt="Тур в Албанию" width="350" height="430">
+              <img src="img/albania-desktop@1x.jpg" srcset="img/albania-desktop@1x.jpg 1x, img/albania-desktop@2x.jpg 2x" alt="Тур в Албанию" width="350" height="430">
             </picture>
           </a>
         </li>
@@ -76,7 +75,7 @@
               <source media="(max-width: 1023px)" srcset="img/makedonia-mobile@1x.webp 1x, img/makedonia-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="img/makedonia-desktop@1x.webp 1x, img/makedonia-desktop@2x.webp 2x" type="image/webp">
               <!-- 1х: 350px; 2x: 700px -->
-              <img src="img/makedonia-desktop@1x.jpg" srcset="img/makedonia-desktop@1x.jpg 1x, img/makedonia-desktop@2x.jpg 2x" alt="Македонию"width="350" height="430">
+              <img src="img/makedonia-desktop@1x.jpg" srcset="img/makedonia-desktop@1x.jpg 1x, img/makedonia-desktop@2x.jpg 2x" alt="Македонию" width="350" height="430">
             </picture>
           </a>
         </li>
@@ -292,9 +291,11 @@
     <div id="buy-tour" class="buy-tour-popup">
       <div class="buy-tour-popup__container">
         <h2 class="visually-hidden">Форма для покупки тура</h2>
-        <svg class="buy-tour-popup__close" width="22" height="22">
-          <use xlink:href="#icon-close"></use>
-        </svg>
+        <a class="buy-tour-popup__close" aria-label="Закрыто окно">
+          <svg  width="22" height="22">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </a>
         <form class="buy-tour-popup__form" action="#" method="post">
           <h3>Купить тур</h3>
           <div class="form-fieldset form-fieldset--vertical">
@@ -357,6 +358,7 @@
       Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
     </div>
   </footer>
-  <script src="js/scrpts.min.js"></script>
+  <script src="js/vendor.min.js" async></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

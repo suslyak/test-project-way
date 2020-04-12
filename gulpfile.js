@@ -49,11 +49,18 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/**/*.js")
+  return gulp.src("source/js/*.js")
   .pipe(uglify())
   .pipe(rename(
     {suffix: '.min'}
     ))
+  .pipe(gulp.dest("build/js"))
+});
+
+gulp.task("vendor-js", function () {
+  return gulp.src("source/js/vendor/*.js")
+  .pipe(uglify())
+  .pipe(rename("vendor.min.js"))
   .pipe(gulp.dest("build/js"))
 });
 
@@ -128,6 +135,7 @@ gulp.task("build", gulp.series(
     "images",
     "webp",
     "js",
+    "vendor-js",
     "copy",
     "css-compile",
     "css",

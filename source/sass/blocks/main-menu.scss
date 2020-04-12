@@ -57,6 +57,8 @@
   text-decoration: none;
   color: $black--dark;
 
+
+
   &:visited {
     color: $black--dark;
   }
@@ -66,6 +68,10 @@
 
     &:visited {
       color: $coral;
+    }
+
+    &:hover {
+      color: $orange;
     }
   }
 

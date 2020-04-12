@@ -3,7 +3,7 @@
   height: 860px;
   position: relative;
   color: $white;
-  background: url("/img/promo-desktop-picture@1x.jpg") no-repeat 50% 0  transparent;
+  background: url("/img/promo-desktop-picture@1x.jpg") no-repeat 50% 0  transparent $mountain-blue;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("/img/promo-desktop-picture@2x.jpg");

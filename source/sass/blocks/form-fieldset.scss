@@ -84,11 +84,11 @@
   background-color: $white;
 }
 
-.form-fieldset__field .form-fieldset__telephone-input {
+.form-fieldset__field input[type="tel"] {
   padding-left: 0;
 }
 
-.form-fieldset__telephone-input ~ .form-fieldset__field-icon {
+input[type="tel"] ~ .form-fieldset__field-icon {
   &::after {
     content: "+7";
     color: $black--dark;
