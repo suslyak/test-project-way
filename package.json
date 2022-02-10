@@ -6,7 +6,7 @@
   ],
   "dependencies": {
     "del": "^5.1.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "description": "Тестовый проект для грейдинга Way от HTML Academy",
   "devDependencies": {
